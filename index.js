@@ -33,9 +33,9 @@ function updateCountdown() {
     seconds.innerHTML = s < 10 ? '0' + s : s;
 }
 
-setTimeout(() => {
-    updateCountdown()
-}, 1000);
+// setTimeout(() => {
+//     updateCountdown()
+// }, 1000);
 
 // 1초마다 시간 업데이트
 setInterval(updateCountdown, 1000);
