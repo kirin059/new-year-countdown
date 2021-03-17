@@ -1,4 +1,4 @@
-@import url("reset.css");
+/* @import url("reset.css"); */
 
 * {
     box-sizing: border-box;
@@ -18,7 +18,6 @@ body {
     background-position: center center;
     text-align: center;
     overflow: hidden;
-    z-index: 1;
 }
 
 body::after {
@@ -30,6 +29,16 @@ body::after {
     height: 100%;
     background-color: rgba(0,0,0,0.5);
 }
+
+body * {
+    z-index: 1;  /* 검정 배경이 뒤로 깔리도록 */
+  }
+
+  .container {
+    margin: 0 auto 800px;
+      width: 100vw;
+      height: 300px;
+  }
 
 h1 {
     font-size: 60px;
@@ -49,6 +58,9 @@ h1 {
 
 .countdown {
     /* display: none; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
     transform: scale(2);
 }
 
